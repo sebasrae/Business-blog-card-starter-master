@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="description" content="Business Blog Card Challenge" />
+    
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -13,7 +14,7 @@
 
     <title>Business Blog Card | devChallenges.io</title>
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    
     <style>
       * {
         margin: 0;
@@ -22,9 +23,82 @@
       }
 
       body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
+        background-color: white;
       }
+      .container{ 
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height:auto;
+        background-color: rgb(241, 243, 246);
+        box-shadow:0 10px 10px rgba(0, 0, 0, 0.1);
 
+
+      }
+      .img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        
+        
+      }
+      .img .img-pri{
+        position: relative;
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        
+      }
+      .img-efe{
+        position: absolute;
+        top:190px;
+        left: 0px;
+        
+        
+      }
+      .des{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        background-color: white;
+      }
+      .des p {
+        font-size: 16px;
+        line-height: 1.5;
+      }  
+      .cont-img {
+        display: flex;
+        
+        align-items: center;
+        padding: 20px;
+        background-color: white;
+      }
+      .cont-img img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 16px;
+      }
+      .cont h2 {
+        flex-wrap: wrap;
+        font-size: 18px;
+        color: rgb(55, 65, 81);
+        margin-bottom: 4px;
+      }
+      .cont p {
+        flex: 2;
+        font-size: 14px;
+        color: rgb(107, 114, 128);
+      }
+      .cont-img{
+        width: 100%;
+      }
       .author-info {
         font-size: 14px;
         text-align: center;
@@ -36,22 +110,47 @@
         color: rgb(55, 65, 81);
         text-decoration: underline;
       }
+      @media (max-width: 412px) {
+        
+        .container {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 90%;
+          
+          
+          
+        }
+        
+      }
     </style>
   </head>
   <body>
-    <!-- Perfect solution for small business
-  
-    Small businesses need to generate leads to grow. You can use tools like Ringy.
-  
-    Amy Burgess
-  
-    Customer Manger, Solution Oy
-   -->
+    <div class="container">
+      <div class="img">
+      <img class="img-pri" src="resources\hero-image-1.jpg" alt="">
+      <img class="img-efe" src="resources\white-overlay.svg" alt="">
+    </div>
+    <div class="des"><h1>Perfect solution for small business</h1>
+    <p>
+      Small businesses need to generate leads to grow. You can use tools like
+      Ringy.
+    </p>
+    </div>
+    <hr>
+    <div class="cont-img">
+      <img src="resources\avatar-image-business-card-1.png" alt="">
+      <div class="con" >
+        <h2>Amy Burgess</h2>
+        <p>Customer Manger, Solution Oy</p></div>
+      
+    </div>
 
+    </div>
+  
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
+      Coded by <a href="https://github.com/sebasrae?tab=repositories">Sebastian Rico A</a> | Challenge by
+      <a href="https://devchallenges.io/solution/52235/submit">devChallenges.io</a
       >.
     </div>
   </body>
